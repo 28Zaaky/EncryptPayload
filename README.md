@@ -16,16 +16,16 @@ The project provides a simple and reliable way to encrypt binary payloads using 
 ## Build & Usage
 
 ```bash
-gcc encrypt_payload.c Tool/crypto.c -o encrypt_payload.exe -lAdvapi32
+gcc shellcrypt.c Tool/crypto.c -o shellcrypt.exe -lAdvapi32
 ```
 
 ```bash
-encrypt_payload.exe <shellcode_file>
+shellcrypt.exe <shellcode_file>
 ```
 
 ## Output
 
-Files generated in `payload/`:
+Files generated :
 
 - `shellcode_aes.bin` – encrypted shellcode (binary)
 - `shellcode_aes.txt` – encrypted shellcode as C array
@@ -36,7 +36,6 @@ Files generated in `payload/`:
 ## License
 
 MIT License
-
 
 ## Disclaimer
 
