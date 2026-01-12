@@ -1,25 +1,4 @@
-/*
- *
- * PAYLOAD ENCRYPTION TOOL
- *
- * Author: 28Zaakypro@proton.me
- *
- * This tool encrypts a shellcode file using AES-256-CBC encryption.
- * It generates random key and IV, then outputs:
- *   1. Encrypted shellcode as C array
- *   2. Key as C array
- *   3. IV as C array
- *
- * COMPILATION:
- * gcc shellcrypt.c crypto.c -o shellcrypt.exe -lAdvapi32
- *
- * USAGE:
- * shellcrypt.exe <input_file>
- *
- * Example:
- * shellcrypt.exe ./shellcode.bin
- *
- */
+// From https://github.com/28Zaaky/Shellcode-Ldr
 
 #include "crypto.h"
 #include <stdio.h>
