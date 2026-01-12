@@ -13,13 +13,11 @@ The project provides a simple and reliable way to encrypt binary payloads using 
 - PKCS#7 padding
 - Outputs encrypted payload, key, and IV as C arrays
 
-## Build
+## Build & Usage
 
 ```bash
 gcc encrypt_payload.c modules/crypto.c -o encrypt_payload.exe -lAdvapi32
 ```
-
-## Usage
 
 ```bash
 encrypt_payload.exe <shellcode_file>
